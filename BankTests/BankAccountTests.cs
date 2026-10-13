@@ -9,7 +9,7 @@ namespace BankTests
         [TestMethod]
         public void Debit_WithValidAmount_UpdatesBalance()
         {
-            // Ваш первый тест (остается на месте)
+            // первый тест
             double beginningBalance = 11.99;
             double debitAmount = 4.55;
             double expected = 7.44;
@@ -24,7 +24,7 @@ namespace BankTests
         [TestMethod]
         public void Debit_WhenAmountIsLessThanZero_ShouldThrowArgumentOutOfRange()
         {
-            // Второй тест (добавляете сюда)
+            // Второй тест
             double beginningBalance = 11.99;
             double debitAmount = -10.00;
             BankAccount account = new BankAccount("Mr. Bryan Walton", beginningBalance);
